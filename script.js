@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Chelsea": {
             result: "Chelsea 1 - 0 Leicester City",
             video: "https://www.youtube.com/watch?v=_ay7-I18Iqk&ab_channel=ChelseaFootballClub",
-            logo: "Chelsea_logo.jpg"
+            logo: "chelsea_logo.jpg"
         }
     };
 
