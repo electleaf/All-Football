@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Football</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>All Football</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#your-team">Your Team</a></li>
+                <li><a href="analysis.html">Analysis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to All Football!</h1>
+            <p>Your one-stop destination for match highlights, press conferences, and game analysis.</p>
+            <a href="#your-team" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section id="about" class="skeuo-card">
+        <h2>⚽ About All Football</h2>
+        <p>
+            Welcome to <span class="highlight">All Football</span>, your <strong>ultimate destination</strong> for everything football.  
+            Whether you're a die-hard fan or a casual viewer, we bring you <strong>weekly match highlights, manager interviews,  
+            post-match analysis, and all the drama straight from the pitch.</strong>
+        </p>
+        <p>
+            <strong>Watch. Analyze. Stay Updated.</strong> Choose your favorite team, relive the action, and never miss an important moment!
+        </p>
+        <div class="about-icons">
+            <div class="icon-box">
+                <img src="trophy.png" alt="Trophy">
+                <p><strong>Top Matches</strong></p>
+            </div>
+            <div class="icon-box">
+                <img src="mic.png" alt="Mic">
+                <p><strong>Manager Talks</strong></p>
+            </div>
+            <div class="icon-box">
+                <img src="chart.png" alt="Chart">
+                <p><strong>Our Analysis</strong></p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="your-team" class="skeuo-card">
+        <h2>🏟️ Your Team</h2>
+        <label for="team-select">Select Your Team:</label>
+        <select id="team-select">
+            <option value="Manchester-United">Manchester United</option>
+            <option value="Manchester-City">Manchester City</option>
+            <option value="Liverpool">Liverpool</option>
+            <option value="Chelsea">Chelsea</option>
+        </select>
+    
+        <div id="team-info" class="team-card">
+            <img id="team-logo" src="default-team.png" alt="team logo">
+            <div class="team-details">
+                <h3 id="team-name">Select a Team</h3>
+                <p id="match-result">Match result will appear here.</p>
+            </div>
+        </div>
+    
+        <div id="highlight-video"></div>
+    </section>
+    
+
+    <footer>
+        <p>© 2025 All Football | All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

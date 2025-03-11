@@ -1,0 +1,236 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+}
+
+/* Fixed Navigation Bar */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00ffcc;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: linear-gradient(-45deg, #00509E, #00A896, #FFC300, #D62828);
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s infinite alternate;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #fff;
+    color: #0d0d0d;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Sections */
+.glass-section {
+    padding: 100px 20px;
+    margin: 30px auto;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0, 255, 204, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.glass-section:hover {
+    transform: scale(1.02);
+}
+
+.glass-section h2 {
+    color: #00ffcc;
+}
+
+/* Dropdown */
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #222;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* About Section */
+.skeuo-card {
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 900px;
+    background: #1E1E1E;
+    border-radius: 15px;
+    border: 5px solid #D4A017;
+    box-shadow: inset 5px 5px 10px #000, 5px 5px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1.5s ease-in-out forwards;
+}
+
+/* Highlight Important Words */
+.highlight {
+    color: #D4A017;
+    font-weight: bold;
+}
+
+/* Icons Section */
+.about-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.icon-box img {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.3));
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Your Team Section */
+.team-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1E1E1E;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 5px solid #D4A017;
+    box-shadow: inset 5px 5px 10px #000, 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+}
+
+.team-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.3);
+}
+
+.team-details {
+    flex: 1;
+    text-align: left;
+    margin-left: 20px;
+}
+
+#team-select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #D4A017;
+    background: #3E2723;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Video Section */
+#highlight-video iframe {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+}
